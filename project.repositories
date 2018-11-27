@@ -3,46 +3,6 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-public-repository</id>
-        <url>http://repository.jboss.org/nexus/content/repositories/public/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>kie-workbench</id>
-        <url>${env.KIE_MAVEN_REPO}</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-ea-plugin-repository</id>
-        <url>https://maven.repository.redhat.com/earlyaccess/all</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>fusesource-plugin</id>
-        <url>http://repo.fusesource.com/nexus/content/repositories/releases</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
-        <id>jboss-public-plugin-repository</id>
-        <url>http://repository.jboss.org/nexus/content/repositories/public/</url>
-        <source>SETTINGS</source>
-      </metadata>
-    </repository>
-    <repository>
-      <include>true</include>
-      <metadata>
         <id>central</id>
         <url>https://repo.maven.apache.org/maven2</url>
         <source>PROJECT</source>
@@ -51,17 +11,17 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-ga-plugin-repository</id>
-        <url>http://maven.repository.redhat.com/techpreview/all</url>
+        <id>jboss-ea-repository</id>
+        <url>https://maven.repository.redhat.com/earlyaccess/all</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-ga-repository</id>
-        <url>http://maven.repository.redhat.com/techpreview/all</url>
-        <source>SETTINGS</source>
+        <id>local</id>
+        <url>/Users/karinamacedo/.m2/repository</url>
+        <source>LOCAL</source>
       </metadata>
     </repository>
     <repository>
@@ -83,9 +43,9 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>local</id>
-        <url>/Users/karinamacedo/.m2/repository</url>
-        <source>LOCAL</source>
+        <id>jboss-public-plugin-repository</id>
+        <url>http://repository.jboss.org/nexus/content/repositories/public/</url>
+        <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
@@ -99,7 +59,39 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-ea-repository</id>
+        <id>fuse-source</id>
+        <url>http://repo.fusesource.com/nexus/content/repositories/releases</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>fusesource-plugin</id>
+        <url>http://repo.fusesource.com/nexus/content/repositories/releases</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>jboss-ga-plugin-repository</id>
+        <url>http://maven.repository.redhat.com/techpreview/all</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>jboss-ga-repository</id>
+        <url>http://maven.repository.redhat.com/techpreview/all</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>jboss-ea-plugin-repository</id>
         <url>https://maven.repository.redhat.com/earlyaccess/all</url>
         <source>SETTINGS</source>
       </metadata>
@@ -107,8 +99,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>fuse-source</id>
-        <url>http://repo.fusesource.com/nexus/content/repositories/releases</url>
+        <id>kie-workbench</id>
+        <url>${env.KIE_MAVEN_REPO}</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>jboss-public-repository</id>
+        <url>http://repository.jboss.org/nexus/content/repositories/public/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
