@@ -9,7 +9,14 @@
     <event-listeners/>
     <task-event-listeners/>
     <globals/>
-    <work-item-handlers/>
+    <work-item-handlers>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>org.kie.server.client.integration.RemoteBusinessRuleTaskHandler("http://localhost:8080/kie-server/services/rest/server","kieserver","kieserver1!",classLoader)</identifier>
+            <parameters/>
+            <name>BusinessRuleTask</name>
+        </work-item-handler>
+    </work-item-handlers>
     <environment-entries/>
     <configurations/>
     <required-roles/>
