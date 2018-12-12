@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.kvarela</groupId>
-  <artifactId>pizzapizza-processes-kjar</artifactId>
+  <artifactId>jbpm-processes-pizzapizza</artifactId>
   <version>1.0</version>
   <packaging>kjar</packaging>
   <name>pizzapizza-processes-kjar</name>
