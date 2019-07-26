@@ -5,11 +5,23 @@
     <audit-mode>JPA</audit-mode>
     <persistence-mode>JPA</persistence-mode>
     <runtime-strategy>PER_PROCESS_INSTANCE</runtime-strategy>
-    <marshalling-strategies/>
+    <marshalling-strategies>
+        <marshalling-strategy>
+            <resolver>mvel</resolver>
+            <identifier>new org.drools.persistence.jpa.marshaller.JPAPlaceholderResolverStrategy("pizzapizzaPU", classLoader)	</identifier>
+            <parameters/>
+        </marshalling-strategy>
+    </marshalling-strategies>
     <event-listeners/>
     <task-event-listeners/>
     <globals/>
     <work-item-handlers>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new org.jbpm.process.workitem.email.EmailWorkItemHandler(null, "-1", null,null, true)</identifier>
+            <parameters/>
+            <name>Email</name>
+        </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
             <identifier>new org.kie.server.client.integration.RemoteBusinessRuleTaskHandler("http://localhost:8080/kie-server/services/rest/server","kieserver","kieserver1!",classLoader)</identifier>
